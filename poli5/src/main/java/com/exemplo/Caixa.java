@@ -11,15 +11,14 @@ public class Caixa<T> {
         this.ocupada = false;
     }
 
-    public void guardar(T objeto) {
-        if (ocupada) {
-            System.out.println("Erro: a caixa já está ocupada!");
-        } else {
+    public void guardar(T objeto){
+        if(ocupada){
+            System.out.println("caixa ja ocupada");
+        }else{
             this.objeto = objeto;
-            this.ocupada = true; 
-            System.out.println("Objeto guardado com sucesso!");
+            this.ocupada = true;
+            System.out.println("objeto guardada e caixa ocupada com sucesso");
         }
     }
+
 }
-
-

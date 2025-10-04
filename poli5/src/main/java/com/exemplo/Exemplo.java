@@ -4,14 +4,14 @@ package com.exemplo;
 public class Exemplo {
 
     public static void main(String[] args) {
-        // caixa de inteiros
-        Caixa<Integer> caixaInt = new Caixa<>();
-        caixaInt.guardar(10);   
-        caixaInt.guardar(20);   // nao guarda
+        
+        //caixa de double 
+        Caixa<Double> doublebox = new Caixa<>();
+        doublebox.guardar(20.0);
 
-        // caixa de strings
-        Caixa<String> caixaStr = new Caixa<>();
-        caixaStr.guardar("oi");
-        caixaStr.guardar("tchau"); // nao guarda
+        //caixa de string
+        Caixa<String> stringbox = new Caixa<>();
+        stringbox.guardar("objeto");
+
     }
 }
